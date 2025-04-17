@@ -4,56 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
+    <!--=============== REMIX ICONS ===============-->
+
+    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>My Portofolio</title>
   </head>
   <body>
+    <!--=============== HEADER PROFILE ===============-->
     <header class="profile container">
+      <!-- darkmode -->
       <i class="bx bx-moon change-theme" id="theme-button"></i>
       <div class="profile-container grid">
         <div class="profile-data">
           <div class="profile-border">
             <div class="profile-shape">
-              <a href="assets/img/profile-img.png" class="image-link">
-                <img src="assets/img/profile-img.png" alt="" />
-            </a>
+              <img src="assets/img/profile-img.png" alt="" />
             </div>
           </div>
           <div class="profile-name">
             <h2>Ngurah Bagus</h2>
           </div>
           <div class="profile-profesion">
-            <h3>Web Design</h3>
+            <h3>Web Developer</h3>
           </div>
           <div class="profile-icon">
             <a href="https://www.instagram.com/wahhdeee/" class="icon profile-instagran"><i class="bx bxl-instagram"></i></a>
             <a href="https://github.com/Rahdebagus?tab=repositories" class="icon profile-github"><i class="bx bxl-github"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=6289686000991" class="icon profile-whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            <a href="<i class='bx bxl-linkedin'></i>" class="icon profile-whatsapp"><i class="bx bxl-whatsapp"></i></a>
           </div>
         </div>
+        <!-- //profile-info -->
         <div class="profile-info grid">
           <div class="profile-info-group">
-            <h3 class="profile-info-number">0</h3>
+            <h3 class="profile-info-number">--</h3>
             <p class="profile-info-description">Web</p>
           </div>
           <div class="profile-info-group">
-            <h3 class="profile-info-number">0</h3>
+            <h3 class="profile-info-number">--</h3>
             <p class="profile-info-description">Design</p>
           </div>
           <div class="profile-info-group">
-            <h3 class="profile-info-number">0</h3>
+            <h3 class="profile-info-number">--</h3>
             <p class="profile-info-description">Complate</p>
           </div>
         </div>
+        <!-- end-profile-info -->
         <div class="profile-buttons">
-          <a class="button" href="assets/pdf/wahde_cv.pdf" download="">Download Cv <i class="bx bxs-download"></i></a>
+          <a class="button" href="assets/pdf/cv.pdf" download="">Download Cv <i class="bx bxs-download"></i></a>
           <div class="profile-button-icon">
             <button class="icon profile-button-icon button button-gray"><i class="bx bxl-instagram"></i></button>
             <button class="icon profile-button-icon button button-gray"><i class="bx bxl-github"></i></button>
@@ -62,19 +66,33 @@
       </div>
     </header>
 
+    <!--=============== MAIN ===============-->
     <main class="main container">
       <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
         <ul class="filters-content">
           <button class="filters-button filters-tabs-active" data-target="#projects">Project</button>
           <button class="filters-button" data-target="#skills">Skills</button>
           <button class="filters-button" data-target="#sertifikat">Sertifikat</button>
         </ul>
         <div class="filters-sections">
+          <!--=============== PROJECTS ===============-->
           <div class="project-content grid filters-active" data-content id="projects">
+            <art icle class="projects-card">
+              <img src="assets/img/camp bar.png" alt="" class="projects-img" />
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Website</span>
+                  <h3 class="project-title">Campbar Restaurants</h3>
+                  <a href="#" class="projects-button button button-small"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </art>
           </div>
-      
 
+          <!--=============== SKILLS ===============-->
           <div class="skills-content grid" data-content id="skills">
+            <!-- Front end -->
             <div class="skills-area">
               <h3 class="skills-title">Front-End</h3>
               <div class="skills-box">
@@ -112,6 +130,7 @@
                 </div>
               </div>
             </div>
+            <!-- backend -->
             <div class="skills-area">
               <h3 class="skills-title">Back-End</h3>
               <div class="skills-box">
@@ -126,7 +145,7 @@
                   <div class="skills-data">
                     <i class="bx bx-check-circle"></i>
                     <div>
-                      <h3 class="skills-name">Kotlin</h3>
+                      <h3 class="skills-name">Node Js</h3>
                       <span class="skills-level">Basic</span>
                     </div>
                   </div>
@@ -142,84 +161,41 @@
                   <div class="skills-data">
                     <i class="bx bx-check-circle"></i>
                     <div>
-                      <h3 class="skills-name">Php</h3>
+                      <h3 class="skills-name">Fire base</h3>
                       <span class="skills-level">Basic</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="skills-area ">
-              <h3 class="skills-title">Design</h3>
-              <div class="skills-box">
-                <div class="skills-group">
-                  <div class="skills-data">
-                    <i class="bx bx-check-circle"></i>
-                    <div>
-                      <h3 class="skills-name">Photoshop</h3>
-                      <!-- <span class="skills-level">-</span> -->
-                    </div>
-                  </div>
-                  <div class="skills-data">
-                    <i class="bx bx-check-circle"></i>
-                    <div>
-                      <h3 class="skills-name">Ilustrator</h3>
-                      <!-- <span class="skills-level">Basic</span> -->
-                    </div>
-                  </div>
-                  <div class="skills-data">
-                    <i class="bx bx-check-circle"></i>
-                    <div>
-                      <h3 class="skills-name">Blender</h3>
-                      <!-- <span class="skills-level">Basic</span> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="skills-group">
-                  <div class="skills-data">
-                    <i class="bx bx-check-circle"></i>
-                    <div>
-                      <h3 class="skills-name">Premier Pro</h3>
-                      <!-- <span class="skills-level"></span> -->
-                    </div>
-                  </div>
-                  <div class="skills-data">
-                    <i class="bx bx-check-circle"></i>
-                    <div>
-                      <h3 class="skills-name">After Effect</h3>
-                      <!-- <span class="skills-level">Basic</span> -->
-                    </div>
-                  </div>
-                  <div class="skills-data">
-                    <i class="bx bx-check-circle"></i>
-                    <div>
-                      <h3 class="skills-name">Maya 3D</h3>
-                      <!-- <span class="skills-level">Basic</span> -->
-                    </div>
-                  </div>
-                </div>
-                
-                
-              </div>
-            </div>
           </div>
 
+          <!-- sertifikat -->
           <div class="project-content grid" data-content id="sertifikat">
-  
+            <art icle class="projects-card">
+              <img src="assets/img/fundamental-android-kotlin.png" alt="" class="projects-img" />
+              <div class="projects-modal">
+                <div class="">
+                  <span class="projects-subtitle">Android Fundamental</span>
+                  <h3 class="project-title">Github App</h3>
+                  <a href="#" class="projects-button button button-small"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </art>
           </div>
         </div>
       </section>
     </main>
 
+    <!--=============== FOOTER ===============-->
     <footer class="footer container">
       <span class="footer-copy"> By Ngurah Bagus </span>
     </footer>
 
+    <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
 
+    <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-    <script>
-    
-  </script>
   </body>
 </html>
